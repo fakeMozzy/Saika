@@ -3,323 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Эволюция вычислительных систем: От абака до квантовых технологий</title>
+    <title>MSI Edition: Эволюция ВТ</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="msi-line"></div>
+
     <nav class="sidebar">
-        <div class="sidebar-brand">
-            <h2>Эволюция ВТ</h2>
-            <p>Интерактивный атлас</p>
+        <div class="logo">
+            <span class="red">TECH</span>HISTORY
         </div>
-        <ul class="nav-menu">
-            <li><a href="#intro" class="nav-link active"><span>00</span> Главная</a></li>
-            <li><a href="#manual" class="nav-link"><span>01</span> Ручной период</a></li>
-            <li><a href="#mechanical" class="nav-link"><span>02</span> Механический период</a></li>
-            <li><a href="#electromec" class="nav-link"><span>03</span> Электромеханический</a></li>
-            <li><a href="#electronic" class="nav-link"><span>04</span> Электронный (ЭВМ)</a></li>
-            <li><a href="#comparison" class="nav-link"><span>05</span> Сравнительный анализ</a></li>
+        <ul class="nav-links">
+            <li><a href="#manual"><span>01</span> MANUAL STAGE</a></li>
+            <li><a href="#mechanical"><span>02</span> MECHANICAL</a></li>
+            <li><a href="#electromec"><span>03</span> ELECTRO-MECH</a></li>
+            <li><a href="#electronic"><span>04</span> DIGITAL ERA</a></li>
+            <li><a href="#stats"><span>05</span> SYSTEM STATS</a></li>
         </ul>
-        <div class="sidebar-footer">
-            <p>© 2026 Проектная работа</p>
-        </div>
     </nav>
 
     <main class="content">
-        
-        <header id="intro" class="main-banner">
-            <div class="banner-overlay"></div>
-            <div class="header-frame">
-                <span class="badge">Историческое исследование</span>
-                <h1>Архитектура мысли</h1>
-                <p class="banner-subtitle">Великий путь автоматизации вычислений: как человечество учило машины думать</p>
-                <div class="scroll-indicator">Листайте вниз чтобы начать чтение ↓</div>
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="EVOLUTION">EVOLUTION</h1>
+                <p class="subtitle">ИСТОРИЯ ВЫЧИСЛИТЕЛЬНОЙ ТЕХНИКИ // СТАТУС: ACTIVE</p>
             </div>
         </header>
 
-        <section class="section manifesto-section">
-            <div class="container-narrow">
-                <blockquote class="grand-quote">
-                    <p>«Мышление — это тоже процесс вычисления, выполняемый нашей нервной системой. Задача инженеров во все времена состояла лишь в том, чтобы перенести эту тяжесть на кремний, металл или дерево». </p>
-                    <cite>— Философский взгляд на развитие кибернетики</cite>
-                </blockquote>
+        <section id="manual" class="stage-section">
+            <div class="section-title">
+                <h2 class="tech-font">01 // РУЧНОЙ ЭТАП</h2>
+                <div class="line"></div>
             </div>
-        </section>
-
-        <section id="manual" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-number">01</span>
-                    <h2 class="section-title">Ручной период: Зарождение счета</h2>
-                    <p class="section-subtitle">Период длиною в десятки тысячелетий, когда главным вычислительным процессором оставался человеческий мозг, а внешние приспособления лишь фиксировали промежуточные результаты.</p>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-header">ABACUS_SYSTEM_V1</div>
+                    <div class="card-img"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Abacus_6.jpg"></div>
+                    <div class="card-body">
+                        <h3>Абак (Древний мир)</h3>
+                        <p>Первый шаг человечества к автоматизации. Устройство, которое научило нас позиционному счету. Это «железо» работало тысячи лет без единого сбоя.</p>
+                    </div>
                 </div>
-
-                <div class="grid">
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/abak.jpg" alt="Абак">
-                            <span class="card-date">V век до н.э.</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Древнегреческий Абак</h3>
-                            <p class="card-text">Абак стал первым шагом к переходу от предметного счета (пальцы, ракушки) к позиционной системе представления чисел. На глиняных или каменных досках вырезались специальные желоба. Галька, перемещаемая по этим желобам, обозначала единицы, десятки, сотни и тысячи. Это устройство позволило купцам древности оперировать огромными суммами без необходимости держать в уме промежуточные математические операции.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Физическое разделение числовых разрядов.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/napier.jpg" alt="Палочки Непера">
-                            <span class="card-date">1617 год</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Палочки Джона Непера</h3>
-                            <p class="card-text">Изобретение шотландского барона Джона Непера перевернуло представление о математических операциях. Набор деревянных или костяных палочек содержал нанесенную таблицу умножения. Совмещая их грани определенным образом, сложнейшее умножение многозначных чисел сводилось к простому сложению смежных цифр на стыках палочек. Именно Непер также подарил миру концепцию логарифмов, породившую позже логарифмическую линейку.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Инструментальное упрощение операции умножения.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/schety.jpg" alt="Русские счеты">
-                            <span class="card-date">XVI век</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Русские дощаные счеты</h3>
-                            <p class="card-text">В отличие от восточных аналогов (суаньпань или соробан), русские счеты использовали привычную десятичную систему счисления без промежуточных полукосточек. Одной из уникальных деталей стала спица с четырьмя косточками, использовавшаяся для расчетов в полушках (четвертях копейки). Простота конструкции и невероятная скорость работы опытного счетовода позволяли этому прибору конкурировать с калькуляторами вплоть до конца ХХ века.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Жестко закрепленные ряды по 10 косточек для десятичного счета.
-                            </div>
-                        </div>
+                <div class="card">
+                    <div class="card-header">NAPIER_RODS.LOG</div>
+                    <div class="card-img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/John_Napier_Rods_1.jpg/800px-John_Napier_Rods_1.jpg"></div>
+                    <div class="card-body">
+                        <h3>Палочки Непера</h3>
+                        <p>Аналоговый ускоритель вычислений XVII века. Позволял выполнять умножение и деление, просто складывая числа на гранях палочек.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="mechanical" class="section gray">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-number">02</span>
-                    <h2 class="section-title">Механический период: Триумф шестеренок</h2>
-                    <p class="section-subtitle">Время, когда математические функции впервые были переложены на физическую логику шестеренчатых передач, кулачков и металлических пружин.</p>
+        <section id="mechanical" class="stage-section">
+            <div class="section-title">
+                <h2 class="tech-font">02 // МЕХАНИЧЕСКИЙ ЭТАП</h2>
+                <div class="line red-line"></div>
+            </div>
+            <div class="grid">
+                <div class="card msi-style">
+                    <div class="card-header">PASCALINE_GEAR_ENGINE</div>
+                    <div class="card-img"><img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Arts_et_Metiers_Pascaline_dsc03869.jpg"></div>
+                    <div class="card-body">
+                        <h3>Паскалина (1642)</h3>
+                        <p>Блез Паскаль перенес математику на латунные шестерни. Это была первая машина с автоматическим переносом разряда. Чистая механика.</p>
+                    </div>
                 </div>
-
-                <div class="grid">
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/pascalina.jpg" alt="Паскалина">
-                            <span class="card-date">1642 год</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>«Паскалина» Блеза Паскаля</h3>
-                            <p class="card-text">Пытаясь облегчить рутинный труд своего отца — сборщика налогов в Руане, 19-летний Блез Паскаль разработал механический сумматор. Основная инновация заключалась в колесе «сотезис» (зубчатом механизме автопереноса десятков). Когда колесо младшего разряда совершало полный оборот, оно автоматически сдвигало старшее колесо на один шаг вперед. Это исключило необходимость помнить перенос единицы при сложении вручную.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Зубчатый механизм автоматического сквозного переноса разряда.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/leibniz.jpg" alt="Арифмометр Лейбница">
-                            <span class="card-date">1673 год</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Арифмометр Готфрида Лейбница</h3>
-                            <p class="card-text">Готфрид Вильгельм Лейбниц усовершенствовал идеи Паскаля, создав машину, способную выполнять все четыре арифметических действия. Сердцем прибора стал ступенчатый валик Лейбница — цилиндр с зубьями разной длины. Перемещая шестеренку вдоль валика, оператор задавал множитель. Машина Лейбница заложила основу для последующего массового производства коммерческих арифмометров.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Использование ступенчатого валика для механического умножения.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/babbage.jpg" alt="Машина Бэббиджа">
-                            <span class="card-date">1837 год</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Аналитическая машина Бэббиджа</h3>
-                            <p class="card-text">Английский математик Чарльз Бэббидж впервые в истории сформулировал концепцию универсального программируемого компьютера. Проект содержал «склад» (оперативную память на шестеренках), «мельницу» (арифметико-логическое устройство) и управляющий блок, считывающий инструкции с перфокарт. Его соратница Ада Лавлейс написала для этой машины первую в мире программу, став первым программистом.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Разделение памяти и процессора, управление ходом программы с перфокарт.
-                            </div>
-                        </div>
+                <div class="card msi-style">
+                    <div class="card-header">BABBAGE_ANALYTICAL</div>
+                    <div class="card-img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AnalyticalEngine_2.jpg/800px-AnalyticalEngine_2.jpg"></div>
+                    <div class="card-body">
+                        <h3>Машина Бэббиджа</h3>
+                        <p>Проект, опередивший время. У него была память («склад») и процессор («мельница»). Первый чертеж современного компьютера в металле.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="electromec" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-number">03</span>
-                    <h2 class="section-title">Электромеханический период: Реле и перфокарты</h2>
-                    <p class="section-subtitle">Переходный этап, соединивший механическую точность деталей со скоростью передачи электрического импульса через релейные переключатели.</p>
-                </div>
-
-                <div class="grid">
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/tabulator.jpg" alt="Табулятор Холлерита">
-                            <span class="card-date">1890 год</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Табулятор Германа Холлерита</h3>
-                            <p class="card-text">Разработанный для обработки результатов переписи населения в США, табулятор доказал силу автоматического анализа данных. Информация о каждом гражданине кодировалась пробиванием отверстий в картонных карточках (перфокартах). Металлические иглы машины опускались на карту: там, где было отверстие, игла касалась ртутной ванночки снизу, замыкая электрическую цепь и сдвигая счетчик на единицу. Перепись была завершена в рекордные сроки.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Электрическое считывание закодированных перфокарт.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/z3.jpg" alt="Z3 Цузе">
-                            <span class="card-date">1941 год</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Z3 Конрада Цузе</h3>
-                            <p class="card-text">Немецкий изобретатель Конрад Цузе в условиях строжайшей секретности спроектировал первый в мире реально работающий программно-управляемый компьютер Z3. Построенный на базе 2000 телефонных реле, Z3 оперировал двоичными числами с плавающей запятой. К сожалению, оригинальный экземпляр был уничтожен при бомбардировке Берлина, но этот аппарат навсегда вошел в историю как первая рабочая двоичная вычислительная система.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Двоичная арифметика на электромагнитных реле.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/mark1.jpg" alt="Марк-1">
-                            <span class="card-date">1944 год</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Гарвардский Марк-1</h3>
-                            <p class="card-text">Созданный Говардом Эйкеном при поддержке инженеров IBM, этот огромный монстр длиной 17 метров представлял собой апогей развития электромеханики. Синхронизация работы сотен тысяч деталей осуществлялась с помощью длинного вращающегося вала, проходящего через всю машину. Считывание программы происходило с перфорированной бумажной ленты. Машина использовалась для военных баллистических расчетов.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Полная автоматизация сложной последовательности расчетов.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section id="stats" class="stage-section">
+            <div class="section-title">
+                <h2 class="tech-font">05 // SYSTEM COMPARISON</h2>
+                <div class="line"></div>
+            </div>
+            <div class="stats-container">
+                <table class="msi-table">
+                    <thead>
+                        <tr>
+                            <th>STAGE</th>
+                            <th>ENGINE TYPE</th>
+                            <th>SPEED CLOCK</th>
+                            <th>STORAGE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MANUAL</td>
+                            <td>Human Brain</td>
+                            <td>0.5 Hz</td>
+                            <td>Beads/Bones</td>
+                        </tr>
+                        <tr>
+                            <td>MECHANICAL</td>
+                            <td>Brass Gears</td>
+                            <td>2.0 Hz</td>
+                            <td>Gear Position</td>
+                        </tr>
+                        <tr>
+                            <td>DIGITAL</td>
+                            <td>Silicon Chip</td>
+                            <td>5.2 GHz</td>
+                            <td>NVMe SSD</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
-
-        <section id="electronic" class="section gray">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-number">04</span>
-                    <h2 class="section-title">Электронный период: Скорость света</h2>
-                    <p class="section-subtitle">Отказ от движущихся механических частей в пользу потока электронов. Эра вакуумных ламп, кремниевых полупроводников и интегральных схем.</p>
-                </div>
-
-                <div class="grid">
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/eniac.jpg" alt="ENIAC">
-                            <span class="card-date">1946 год</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Легендарный ENIAC</h3>
-                            <p class="card-text">Электронный числовой интегратор и вычислитель (ENIAC) стал первой по-настоящему универсальной ЭВМ. Построенный в Пенсильванском университете, он содержал около 18 000 электронных вакуумных ламп. Машина потребляла колоссальное количество электроэнергии (150 кВт) и часто выходила из строя из-за перегорания ламп, но ее быстродействие (5000 операций сложения в секунду) поражало воображение современников.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Полностью электронная обработка данных без задержек на механику.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/besm.jpg" alt="БЭСМ Лебедева">
-                            <span class="card-date">1953 год</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>БЭСМ Академика Лебедева</h3>
-                            <p class="card-text">Быстродействующая электронная счетная машина (БЭСМ), созданная под руководством Сергея Алексеевича Лебедева, вывела советскую науку на лидирующие позиции в мире вычислительной техники. БЭСМ-6, появившаяся позже, выполняла рекордный для своего времени миллион операций в секунду. Лебедев независимо разработал принципы построения ЭВМ, которые легли в основу советской космической программы.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Параллельная обработка разрядов чисел для ускорения вычислений.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card premium-card">
-                        <div class="card-img-wrapper">
-                            <img src="img/modern.jpg" alt="Микропроцессор Intel">
-                            <span class="card-date">с 1971 года</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Кремниевая революция</h3>
-                            <p class="card-text">Изобретение планарного транзистора и интегральной схемы позволило инженерам размещать миллионы электронных ключей на крошечном кристалле кремния. Появление процессора Intel 4004 ознаменовало начало эры персональных компьютеров. Компьютеры перестали занимать огромные залы и превратились в компактные настольные устройства, а затем и в мобильные телефоны, которые сегодня есть у каждого.</p>
-                            <div class="card-tech-info">
-                                <strong>Ключевая идея:</strong> Экстремальная микроминиатюризация полупроводниковых компонентов.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="comparison" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-number">05</span>
-                    <h2 class="section-title">Сравнительный анализ эпох</h2>
-                    <p class="section-subtitle">Наглядная демонстрация технологического прогресса человечества в цифрах и фактах.</p>
-                </div>
-
-                <div class="table-wrapper">
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Эпоха развития</th>
-                                <th>Типичный представитель</th>
-                                <th>Скорость счета</th>
-                                <th>Носитель информации</th>
-                                <th>Главный недостаток</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Ручной этап</strong></td>
-                                <td>Абак / Русские счеты</td>
-                                <td>~0.5 оп / сек</td>
-                                <td>Положение костяшек на доске</td>
-                                <td>Человеческий фактор, утомляемость</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Механический этап</strong></td>
-                                <td>Арифмометр Лейбница</td>
-                                <td>~1-2 оп / сек</td>
-                                <td>Положение зубчатых колес</td>
-                                <td>Износ металлических деталей</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Электромеханический</strong></td>
-                                <td>Гарвардский «Марк-1»</td>
-                                <td>~3-5 оп / сек</td>
-                                <td>Перфоленты, перфокарты</td>
-                                <td>Огромный вес, шум релейных блоков</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Электронный (ЭВМ)</strong></td>
-                                <td>ENIAC / Intel Core i9</td>
-                                <td>от 5 000 до 10¹² оп / сек</td>
-                                <td>Магнитные диски, полупроводники</td>
-                                <td>Тепловыделение, физические лимиты кремния</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <script src="script.js"></script>
 </body>
 </html>
