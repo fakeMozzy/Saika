@@ -3,118 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSI Edition: Эволюция ВТ</title>
+    <title>История Эволюции ВТ</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600;800&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="msi-line"></div>
-
     <nav class="sidebar">
-        <div class="logo">
-            <span class="red">TECH</span>HISTORY
-        </div>
+        <div class="logo">ЭВОЛЮЦИЯ <span>ВТ</span></div>
         <ul class="nav-links">
-            <li><a href="#manual"><span>01</span> MANUAL STAGE</a></li>
-            <li><a href="#mechanical"><span>02</span> MECHANICAL</a></li>
-            <li><a href="#electromec"><span>03</span> ELECTRO-MECH</a></li>
-            <li><a href="#electronic"><span>04</span> DIGITAL ERA</a></li>
-            <li><a href="#stats"><span>05</span> SYSTEM STATS</a></li>
+            <li><a href="#manual">Ручной этап</a></li>
+            <li><a href="#mechanical">Механический</a></li>
+            <li><a href="#electromec">Электромеханический</a></li>
+            <li><a href="#electronic">Электронный</a></li>
+            <li><a href="#comparison">Сравнение</a></li>
         </ul>
     </nav>
 
     <main class="content">
         <header class="hero">
-            <div class="hero-content">
-                <h1 class="glitch" data-text="EVOLUTION">EVOLUTION</h1>
-                <p class="subtitle">ИСТОРИЯ ВЫЧИСЛИТЕЛЬНОЙ ТЕХНИКИ // СТАТУС: ACTIVE</p>
+            <div class="hero-text">
+                <h1>История вычислительной техники</h1>
+                <p>Путь от первых костяшек до квантовых процессоров</p>
             </div>
         </header>
 
-        <section id="manual" class="stage-section">
-            <div class="section-title">
-                <h2 class="tech-font">01 // РУЧНОЙ ЭТАП</h2>
-                <div class="line"></div>
-            </div>
+        <section id="manual" class="section">
+            <h2 class="title">01. РУЧНОЙ ЭТАП</h2>
+            <p class="desc">Период, когда человек считал с помощью простых предметов, используя законы математики без сложной механики.</p>
             <div class="grid">
                 <div class="card">
-                    <div class="card-header">ABACUS_SYSTEM_V1</div>
-                    <div class="card-img"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Abacus_6.jpg"></div>
-                    <div class="card-body">
-                        <h3>Абак (Древний мир)</h3>
-                        <p>Первый шаг человечества к автоматизации. Устройство, которое научило нас позиционному счету. Это «железо» работало тысячи лет без единого сбоя.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Abacus_6.jpg" alt="Абак">
+                    <div class="info">
+                        <h3>Абак и счеты</h3>
+                        <p>Появившись в Древнем Вавилоне, абак стал первым инструментом, который разделил числа на разряды. Это позволило людям выполнять операции с тысячами, просто передвигая камни по желобам.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header">NAPIER_RODS.LOG</div>
-                    <div class="card-img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/John_Napier_Rods_1.jpg/800px-John_Napier_Rods_1.jpg"></div>
-                    <div class="card-body">
-                        <h3>Палочки Непера</h3>
-                        <p>Аналоговый ускоритель вычислений XVII века. Позволял выполнять умножение и деление, просто складывая числа на гранях палочек.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/John_Napier_Rods_1.jpg/800px-John_Napier_Rods_1.jpg" alt="Палочки Непера">
+                    <div class="info">
+                        <h3>Палочки Непера (1617)</h3>
+                        <p>Джон Непер упростил жизнь ученым, создав инструмент для быстрого умножения. Его изобретение легло в основу логарифмической линейки, которой инженеры пользовались даже в XX веке.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="mechanical" class="stage-section">
-            <div class="section-title">
-                <h2 class="tech-font">02 // МЕХАНИЧЕСКИЙ ЭТАП</h2>
-                <div class="line red-line"></div>
-            </div>
+        <section id="mechanical" class="section">
+            <h2 class="title">02. МЕХАНИЧЕСКИЙ ЭТАП</h2>
+            <p class="desc">Эпоха зубчатых колес и рычагов. Математика превратилась в физический процесс.</p>
             <div class="grid">
-                <div class="card msi-style">
-                    <div class="card-header">PASCALINE_GEAR_ENGINE</div>
-                    <div class="card-img"><img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Arts_et_Metiers_Pascaline_dsc03869.jpg"></div>
-                    <div class="card-body">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Arts_et_Metiers_Pascaline_dsc03869.jpg" alt="Паскалина">
+                    <div class="info">
                         <h3>Паскалина (1642)</h3>
-                        <p>Блез Паскаль перенес математику на латунные шестерни. Это была первая машина с автоматическим переносом разряда. Чистая механика.</p>
+                        <p>Блез Паскаль в 19 лет создал первую в мире работающую суммирующую машину. Она автоматически переносила десятки, что было невероятным инженерным достижением того времени.</p>
                     </div>
                 </div>
-                <div class="card msi-style">
-                    <div class="card-header">BABBAGE_ANALYTICAL</div>
-                    <div class="card-img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AnalyticalEngine_2.jpg/800px-AnalyticalEngine_2.jpg"></div>
-                    <div class="card-body">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AnalyticalEngine_2.jpg/800px-AnalyticalEngine_2.jpg" alt="Машина Бэббиджа">
+                    <div class="info">
                         <h3>Машина Бэббиджа</h3>
-                        <p>Проект, опередивший время. У него была память («склад») и процессор («мельница»). Первый чертеж современного компьютера в металле.</p>
+                        <p>Чарльз Бэббидж спроектировал «Аналитическую машину», которая имела все части современного ПК: память и процессор. Проект не был достроен, но стал фундаментом компьютерной эры.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="stats" class="stage-section">
-            <div class="section-title">
-                <h2 class="tech-font">05 // SYSTEM COMPARISON</h2>
-                <div class="line"></div>
-            </div>
-            <div class="stats-container">
-                <table class="msi-table">
+        <section id="comparison" class="section">
+            <h2 class="title">05. СРАВНЕНИЕ ХАРАКТЕРИСТИК</h2>
+            <div class="table-container">
+                <table class="tech-table">
                     <thead>
                         <tr>
-                            <th>STAGE</th>
-                            <th>ENGINE TYPE</th>
-                            <th>SPEED CLOCK</th>
-                            <th>STORAGE</th>
+                            <th>Этап</th>
+                            <th>Технология</th>
+                            <th>Носитель данных</th>
+                            <th>Скорость</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>MANUAL</td>
-                            <td>Human Brain</td>
-                            <td>0.5 Hz</td>
-                            <td>Beads/Bones</td>
+                            <td>Ручной</td>
+                            <td>Кости / Камни</td>
+                            <td>Физический предмет</td>
+                            <td>Очень низкая</td>
                         </tr>
                         <tr>
-                            <td>MECHANICAL</td>
-                            <td>Brass Gears</td>
-                            <td>2.0 Hz</td>
-                            <td>Gear Position</td>
+                            <td>Механический</td>
+                            <td>Шестерни / Валы</td>
+                            <td>Положение зубцов</td>
+                            <td>Низкая</td>
                         </tr>
                         <tr>
-                            <td>DIGITAL</td>
-                            <td>Silicon Chip</td>
-                            <td>5.2 GHz</td>
-                            <td>NVMe SSD</td>
+                            <td>Электронный</td>
+                            <td>Транзисторы</td>
+                            <td>Электронный сигнал</td>
+                            <td>Мгновенная</td>
                         </tr>
                     </tbody>
                 </table>
