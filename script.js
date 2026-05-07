@@ -1,34 +1,44 @@
-document.querySelectorAll('.sidebar a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section, header');
 
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
+    // Плавный переход к соответствующему разделу
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
 
-// Дополнительно: Подсветка активного раздела при скролле
-window.addEventListener('scroll', () => {
-    let current = "";
-    const sections = document.querySelectorAll("section");
-    
-    sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 100) {
-            current = section.getAttribute("id");
-        }
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
     });
 
-    document.querySelectorAll(".sidebar a").forEach((a) => {
-        a.style.color = "#888";
-        if (a.getAttribute("href").includes(current)) {
-            a.style.color = "#fff";
+    // Функция авто-определения положения экрана и подсветки пунктов в боковой панели
+    function changeActiveLink() {
+        let index = sections.length;
+
+        while(--index && window.scrollY + 150 < sections[index].offsetTop) {}
+        
+        navLinks.forEach((link) => link.classList.remove('active'));
+        
+        if (index >= 0) {
+            const activeId = sections[index].getAttribute('id');
+            const correspondingLink = document.querySelector(`.nav-link[href="#${activeId}"]`);
+            if (correspondingLink) {
+                correspondingLink.classList.add('active');
+            }
         }
-    });
+    }
+
+    changeActiveLink();
+    window.addEventListener('scroll', changeActiveLink);
 });
